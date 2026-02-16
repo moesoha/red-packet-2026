@@ -1,0 +1,13 @@
+[Unit]
+Description=Red Packet 2026: part 1 Echo
+After=network.target
+
+[Service]
+ExecStart=/opt/red-packet-2026-part1
+AmbientCapabilities=CAP_NET_RAW
+KillMode=process
+Restart=always
+DynamicUser=true
+
+[Install]
+WantedBy=default.target

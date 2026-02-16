@@ -1,0 +1,6 @@
+想延迟了。所以针对所有 ICMP echo request 都延迟若干秒返回。
+
+don't forget `sysctl net.ipv6.icmp.echo_ignore_all=1`
+
+52 元分 68 个
+76823362

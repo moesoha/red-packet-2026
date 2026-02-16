@@ -1,0 +1,10 @@
+要使用 @hb26.foobar.ac.cn 的邮箱向 get@ma26.hb.lohu.info 发送邮件。
+
+hb26.foobar.ac.cn 需要写 SPF 记录，写上 Cloudflare WARP 的中国大陆(?先试试可不可以用)的 IP。
+
+v=spf1 ip6:2a0e:aa06:40d:beef::/64 ip6:2a09:bac0::/29 ip6:2a0e:aa06:40e:beef::/64 ip6:2606:54c0::/30 -all
+
+收件端简单地反正用 milter 检查 ip 对了就吐口令就行了。
+
+68 元分 28 个
+82460732

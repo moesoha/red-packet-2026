@@ -1,0 +1,8 @@
+[package]
+name = "red-packet-2026-part1"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tokio = { version = "1.49", features = ["macros", "rt", "rt-multi-thread", "sync", "time"] }
+pnet = "0.35"
