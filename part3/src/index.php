@@ -43,7 +43,7 @@
 		<?php if(!$year): ?>
 		<div class="container">
 			<br />
-			<p>现在是<?php echo date('Y年m月d日', $time); ?>，不在春节活动时间哦。</p>
+			<p>现在是<?php echo date('Y年m月d日', $time); ?>，不在马年春节活动时间哦。</p>
 			<br />
 		</div>
 		<?php else: ?>
@@ -55,14 +55,17 @@
 				╰★☆★☆★☆★☆★╯<br /><br />
 			</p>
 			<div class="texts">
-				<p id="date">现在是<?php echo date('m月d日', $time)."，<span style=\"color: red;\">{$year}马年春节</span>"; ?>，祝您：</p>
-
+				<p id="date">现在是<?php echo date('m月d日', $time)."，<span style=\"color: red;\">{$year}马年春节</span>"; ?>。</p>
 				<?php if($year === 2026): ?>
+				<p>虽然今年没有准备红包，但祝您：</p>
+				<br />
 				保持热爱，马不停蹄。<br />
 				能量充沛，灵感不竭。<br />
 				所求皆如愿，所行化坦途。<br />
 				愿你万事顺遂，马到成功。<br />
 				<?php elseif($year === 2014): ?>
+				<p>今年没有准备红包，祝您：</p>
+				<br />
 				事业高端大气上档次，<br />
 				生活低调奢华有内涵！<br />
 				告别心塞、告别压力山大，<br />
@@ -75,7 +78,7 @@
 				平安喜乐，万事顺遂！
 				<?php elseif($year === 2002): ?>
 				不当蛋白质，天天都开心 ^_^<br />
-				不酱紫郁闷，不成天7456 >_<<br />
+				不酱紫郁闷，不成天7456 &gt;_&lt;<br />
 				电脑不当机，上网不断线 :-)<br />
 				所有的帖子都有人顶，<br />
 				所有的祝福都被人稀饭！<br />
