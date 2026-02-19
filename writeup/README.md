@@ -97,7 +97,7 @@ last-modified:  2019-03-19T21:12:40Z
 source:         RIPE # Filtered
 ```
 
-Cloudflare 被称为“互联网大善人”，其中的一个原因就是提供了免费的 VPN 服务“WARP”，保护用户的源 IP 不被追踪。所以看起来，我们利用 WARP 就可以获得 `hb26.foobar.ac.cn` 授权发信的 IP 了。
+Cloudflare 被称为“互联网大善人”，其中的一个原因就是提供了免费的 VPN 服务“WARP”，保护用户的原始 IP 不被自己的 ISP 追踪~~，转而把自己的底裤卖给 Cloudflare~~。所以看起来，我们利用 WARP 就可以获得 `hb26.foobar.ac.cn` 授权发信的 IP 了。
 
 配置好 WARP，然后访问！诶？这回怎么连服务器都连不上了。原来是 Cloudflare 封掉了出向的 25 端口，这也是 ISP 非常常见的为了避免自己的 IP 被发垃圾邮件而“弄脏”的安全策略。
 
