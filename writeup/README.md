@@ -20,7 +20,8 @@
 
 首先查询 DNS 记录，发现 `26horse.hb.lohu.info` 只有一个 AAAA 的记录，并且这个 IP 什么端口都没开。如果 ping 的话，好像也没……诶，有响应！
 
-<video autoplay loop muted src="./part1-deferred.mp4"></video>
+<!--video autoplay loop muted src="./part1-deferred.mp4" alt="the deferred echo replies"></video-->
+![the deferred echo replies](./part1-deferred.mp4)
 
 Linux 的 ping 工具会明确提示“`(truncated)`”，那这回包明显是有点东西了。至于为什么要 8、9 秒才会收到，单纯只是我想延迟了，所以把每个返回报文都缓存了一个固定的时间才返回，有些朋友如果不够耐心就会错过回包。
 
